@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: tomato;
+  font-size: 50px;
+  font-family: helvetica;
+}
+body{
+    background: grey;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+.menu{
+  width: 100%;
+  display: block;
+}
+
+.nav ul{
+  padding-top: 5px;
+  position: absolute;
+  text-align: center;
+}
+.nav ul li {
+
+  list-style: none;
+  display: inline-block;
+  background-color: #efefef;
+  border: 1px solid white;
+  margin: 5px;
+
+}
+
+.nav ul li:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.nav ul li a{
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+p{
+  padding-top: 40px;
+}
+
+.top{
+  background-color: wheat;
+  border: 3px solid tomato;
+  width: 90%;
+  height: 150px;
+  margin: 20px auto;
+  margin-bottom: 60px;
+}
+
+.second{
+  width: 90%;
+  height: 150px;
+  margin: 20px auto;
+
+  /* position: relative; */
+}
+
+.two, .three, .four{
+  display: inline-block;
+  background-color: yellow;
+  border: 3px solid tomato;
+  width: 31.5%;
+  height: 300px;
+  /* height: 300px; */
+}
+
+.two{
+  /* position: absolute; */
+  left: 0px;
+}
+.three{
+  /* position: absolute; */
+  left: 33.6%;
+
+}
+.four{
+  /* position: absolute; */
+  right: 0px;
+}
+
+
+.third{
+  width: 90%;
+  height: 150px;
+  margin: 20px auto;
+  /* position: relative; */
+}
+
+.five, .six{
+  display: inline-block;
+  background-color: yellow;
+  border: 3px solid tomato;
+  width: 49%;
+  height: 300px;
+  margin-top: 200px;
+}
+
+.five{
+  float:left;
+}
+img{
+width: 100%;
+height: 300px;
+}
+
+.six{
+  float: right;
+}
+
+.bottom{
+  background-color: wheat;
+  border: 3px solid tomato;
+  width: 90%;
+  height: 150px;                                                                                                                    
+  margin: 20px auto;
+  margin-top: 400px;
+}
+
+/* Tablet Changes */
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: green;
+  }
+  .top{
+    height: 420px;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+.nav ul li{
+  display: block;
+}
+.menu{
+  width: 100%;
+}
+}
+
+/* Mobile Changes */
+
+@media only screen and (max-width:600px) {
+  body {
+    background-color: red;
+  }
+  .top{
+    height: 350px;
+    width: 100%;
+    background-color: wheat;
+  }
+
+  .menu{
+    width: 100%;
+
+  }
+
+  .two, .three, .four{
+    width: 100%;
+    display: block;
+  }
+
+  .five{
+    width: 90%;
+    /* display: flex; */
+
+  }
+
+  .six{
+    width: 90%;
+
+  }
+  .bottom{
+    width: 100%;
+    display: flex;
+  }
+
+  .nav ul li{
+    display: block;
+  }
+
+  .second {
+    height: initial;
+    /* position: relative; */
+  }
+  .five, .six{
+    margin: 5px;
+    display: block;
+  }
+.third{
+  display: block;
+  width: 100%;
+
+}
+}
